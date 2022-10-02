@@ -1,0 +1,53 @@
+.wrapper-box{
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+	transition: all 0.5s linear 2s;
+}
+.wrapper-box:hover {
+	background-color: blue;
+}
+.child-box{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	transition: all 0.2s linear;
+}
+.child-box:hover {
+	background-color: lightblue;
+	transform: translate(-50%,-50%) rotate(0deg);
+ }
+ .box{
+ 	width: 200px;
+ 	height: 100px;
+ 	background-color: lightblue;
+ 	border-radius: 25px;
+ }
+
+/*keyframe animation*/
+
+.animation-block{
+	position: relative;
+}
+
+.smallimage{
+	height: 100px;
+/*	position: absolute;*/
+	animation: small 1s infinite;
+}
+
+/*@keyframes small {
+	0%{left: 100px; transform: rotate(45deg);}
+	70%{left: 200px; transform: rotate(70deg);}
+	100%{left: 700px; transform: rotate(120deg);}
+
+}*/
+@keyframes small{
+	0%{transform: translateX(100px);}
+	70%{transform: translateX(200px);}
+	100%{transform: translateX(100px);}
